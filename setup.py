@@ -37,7 +37,7 @@ plugin_license = "AGPLv3"
 plugin_requires = [
 	"Pillow>=9.3,<11",
 	"qrcode",
-	"peewee"
+	"peewee",
 	"psycopg2",  # postgres - driver
 	# "pymysql",	#mysql - driver
 ]
