@@ -38,7 +38,7 @@ plugin_requires = [
 	"Pillow>=9.3,<11",
 	"qrcode",
 	"peewee"
-	# "psycopg2-binary",  # postgres - driver
+	"psycopg2",  # postgres - driver
 	# "pymysql",	#mysql - driver
 ]
 
