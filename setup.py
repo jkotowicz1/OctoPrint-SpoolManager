@@ -39,7 +39,7 @@ plugin_requires = [
 	"qrcode",
 	"peewee",
 	"psycopg2-binary",  # postgres - driver
-	# "pymysql",	#mysql - driver
+	"pymysql",	#mysql - driver
 ]
 
 ### --------------------------------------------------------------------------------------------------------------------
