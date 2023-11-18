@@ -78,7 +78,7 @@ class DatabaseManager(object):
 			host = self._databaseSettings.host
 			port = self._databaseSettings.port
 			user = self._databaseSettings.user
-			password = self._databaseSettFings.password
+			password = self._databaseSettings.password
 			if ("postgres" == databaseType):
 				# Connect to a Postgres database.
 				database = PostgresqlDatabase(databaseName,
