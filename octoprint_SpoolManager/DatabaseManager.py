@@ -35,7 +35,7 @@ class DatabaseManager(object):
 		fileLocation = ""
 		# External stuff
 		useExternal = False
-		type = "postgresql" # postgresql,  mysql NOT sqlite
+		type = "postgres" # postgresql,  mysql NOT sqlite
 		name = ""
 		host = ""
 		port = 0
