@@ -38,10 +38,10 @@ class DatabaseManager(object):
 		# External stuff
 		useExternal = False
 		type = "postgres" # postgresql,  mysql NOT sqlite
-		name = ""
-		host = ""
-		port = 0
-		user = ""
+		name = "postgres"
+		host = "192.168.215.10"
+		port = 5432
+		user = "postgres"
 		password = ""
 
 		def __str__(self):
