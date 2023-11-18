@@ -7,7 +7,7 @@ import os
 import logging
 import shutil
 import sqlite3
-import psycopg2
+#import psycopg2
 #import pymysql
 
 from octoprint_SpoolManager.WrappedLoggingHandler import WrappedLoggingHandler
