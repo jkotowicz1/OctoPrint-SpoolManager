@@ -7,6 +7,7 @@ import os
 import logging
 import shutil
 import sqlite3
+import psycopg2-binary
 
 from octoprint_SpoolManager.WrappedLoggingHandler import WrappedLoggingHandler
 from peewee import *
@@ -76,7 +77,7 @@ class DatabaseManager(object):
 			host = self._databaseSettings.host
 			port = self._databaseSettings.port
 			user = self._databaseSettings.user
-			password = self._databaseSettings.password
+			password = self._databaseSettFings.password
 			if ("postgres" == databaseType):
 				# Connect to a Postgres database.
 				database = PostgresqlDatabase(databaseName,
