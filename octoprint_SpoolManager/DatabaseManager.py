@@ -7,7 +7,7 @@ import os
 import logging
 import shutil
 import sqlite3
-import psycopg2-binary
+import psycopg2
 
 from octoprint_SpoolManager.WrappedLoggingHandler import WrappedLoggingHandler
 from peewee import *
