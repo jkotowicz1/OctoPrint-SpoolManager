@@ -1007,7 +1007,8 @@ class DatabaseManager(object):
 	def saveSpool(self, spoolModel, withReusedConnection=False):
 
 		def databaseCallMethode():
-			databaseId = spoolModel.get_id()
+			#databaseId = spoolModel.get_id()
+			databaseId = spoolModel.databaseId
 			# if (databaseId != None):
 			# 	# we need to update and we need to make
 			# 	spoolModel = self.loadSpool(databaseId)
@@ -1051,7 +1052,8 @@ class DatabaseManager(object):
 					# 	SpoolModel.update({SpoolModel.isTemplate: False}).where(SpoolModel.isTemplate == True).execute()
 
 					spoolModel.save()
-					databaseId = spoolModel.get_id()
+					#databaseId = spoolModel.get_id()
+					databaseId = spoolModel.databaseId
 					# do expicit commit
 					transaction.commit()
 				except Exception as e:
