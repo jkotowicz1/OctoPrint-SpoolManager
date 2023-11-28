@@ -17,8 +17,7 @@ def make_table_name(model_class):
 
 class BaseModel(Model):
 
-	#databaseId = AutoField()
-	databaseId = 1
+	databaseId = AutoField()
 	created = DateTimeField(default=datetime.datetime.now)	# TODO question: Is this better? DateTimeField(constraints=[SQL('DEFAULT CURRENT_TIMESTAMP')])
 	updated = DateTimeField(default=datetime.datetime.now)	# since V4
 	version = SmallIntegerField(null=True)					# since V4
