@@ -1007,7 +1007,7 @@ class DatabaseManager(object):
 	def saveSpool(self, spoolModel, withReusedConnection=False):
 
 		def databaseCallMethode():
-			#databaseId = spoolModel.get_id()
+			databaseId = spoolModel.get_id()
 			# if (databaseId != None):
 			# 	# we need to update and we need to make
 			# 	spoolModel = self.loadSpool(databaseId)
