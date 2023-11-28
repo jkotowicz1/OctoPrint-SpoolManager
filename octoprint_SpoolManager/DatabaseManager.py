@@ -608,19 +608,19 @@ class DatabaseManager(object):
 		logger = logging.getLogger('peewee')
 		# we need only the single logger without parent
 		logger.parent = None
-		# logger.addHandler(logging.StreamHandler())
+		logger.addHandler(logging.StreamHandler())
 		# activate SQL logging on PEEWEE side and on PLUGIN side
-		# logger.setLevel(logging.DEBUG)
-		# self._sqlLogger.setLevel(logging.DEBUG)
+		logger.setLevel(logging.DEBUG)
+		self._sqlLogger.setLevel(logging.DEBUG)
 		self.showSQLLogging(self.sqlLoggingEnabled)
 
 		wrappedHandler = WrappedLoggingHandler(self._sqlLogger)
 		logger.addHandler(wrappedHandler)
 
 		connected = self.connectoToDatabase(sendErrorPopUp=False)
-		#if (connected == True):
+		if (connected == True):
 		#	self._createDatabase(FORCE_CREATE_TABLES)
-		#	self.closeDatabase()
+			self.closeDatabase()
 
 		return self._currentErrorMessageDict
 
