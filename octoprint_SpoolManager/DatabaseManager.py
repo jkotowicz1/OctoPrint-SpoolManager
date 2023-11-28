@@ -1007,7 +1007,7 @@ class DatabaseManager(object):
 	def saveSpool(self, spoolModel, withReusedConnection=False):
 
 		def databaseCallMethode():
-			# databaseId = model.get_id()
+			#databaseId = spoolModel.get_id()
 			# if (databaseId != None):
 			# 	# we need to update and we need to make
 			# 	spoolModel = self.loadSpool(databaseId)
@@ -1021,7 +1021,7 @@ class DatabaseManager(object):
 			# 		if (versionFromUI != versionFromDatabase):
 			# 			self._passMessageToClient("error", "DatabaseManager",
 			# 									  "Could not update the Spool, because someone already modified the spool. Do a reload!")
-			# 			return
+			# 			returntotal
 
 			with self._database.atomic() as transaction:  # Opens new transaction.
 				try:
