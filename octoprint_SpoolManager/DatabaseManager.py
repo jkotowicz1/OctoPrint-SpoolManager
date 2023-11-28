@@ -618,9 +618,9 @@ class DatabaseManager(object):
 		logger.addHandler(wrappedHandler)
 
 		connected = self.connectoToDatabase(sendErrorPopUp=False)
-		if (connected == True):
-			self._createDatabase(FORCE_CREATE_TABLES)
-			self.closeDatabase()
+		#if (connected == True):
+		#	self._createDatabase(FORCE_CREATE_TABLES)
+		#	self.closeDatabase()
 
 		return self._currentErrorMessageDict
 
