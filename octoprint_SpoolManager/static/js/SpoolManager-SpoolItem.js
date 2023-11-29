@@ -81,6 +81,7 @@ let SpoolItem;
         this.usedWeight = ko.observable();
         this.usedPercentage = ko.observable();
         this.code = ko.observable();
+        this.serialNumber = ko.observable();
         this.noteText = ko.observable()
         this.noteDeltaFormat = ko.observable()
         this.noteHtml = ko.observable()
@@ -207,6 +208,7 @@ let SpoolItem;
         this.remainingWeight(parseFloat(updateData.remainingWeight));
         this.remainingPercentage(updateData.remainingPercentage);
         this.code(updateData.code);
+        this.serialNumber(updateData.serialNumber);
         this.usedPercentage(updateData.usedPercentage);
 
         this.totalLength(updateData.totalLength);
